@@ -1,0 +1,26 @@
+{
+  "name": "port-appointment-finder",
+  "version": "16.0.0-fixed",
+  "description": "Port appointment finder v16 fixed — aggressive search polling",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "run": "node dist/index.js",
+    "start": "node dist/index.js",
+    "start:dev": "npm run build && node dist/index.js",
+    "test": "npm run build && node --test test/*.test.cjs",
+    "smoke": "npm run build && node scripts/smoke-interactive-cli.cjs && node scripts/smoke-no-slots.cjs && node scripts/smoke-schedule-429.cjs && node scripts/smoke-stagger.cjs && node scripts/smoke-one-book-per-driver.cjs && node scripts/smoke-multi-driver-rotate.cjs && node scripts/smoke-smart-two-drivers.cjs && node scripts/smoke-sequential-mode.cjs && node scripts/smoke-outer-retry-n.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "@types/prompts": "^2.4.9",
+    "typescript": "~5.8.3"
+  },
+  "dependencies": {
+    "prompts": "^2.4.2"
+  }
+}
