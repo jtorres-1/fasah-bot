@@ -1,0 +1,6 @@
+node_modules/
+bot.log
+.env
+config.json
+drivers.json
+*.token
